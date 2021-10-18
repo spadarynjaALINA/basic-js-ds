@@ -13,32 +13,22 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  module.exports = class Stack {
-   constructor () {
-        let arr=[]
-     let i=0
-     this.i = i
-        this.arr = arr
-     }
-    
-
+  constructor () {
+    let arr=[]
+    let i=0
+    this.i = i
+    this.arr = arr
+  }
   push(element ) {
-
-
-   
     this.arr[this.i]= element
     this.i+=1
-  
   }
 
-   pop() {
-     
-     
+  pop() {
     let a = this.arr[this.i-1]
     this.arr.length = this.i-1
     this.i --
-     
-      console.log(a)
-return a
+    return a
   }
 
   peek() {
